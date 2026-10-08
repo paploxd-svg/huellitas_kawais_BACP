@@ -1,0 +1,260 @@
+/* =========================================================
+   PROYECTO: Huellitas Comunitarias (PAEC)
+   HOJA DE ESTILOS CSS UNIFICADA
+   Paleta de colores (Máximo 4 colores principales):
+   1. Naranja Cálido: #D96B27
+   2. Verde Naturaleza: #2E7D32
+   3. Beige / Crema: #FDFBF7
+   4. Gris Oscuro: #2D3748
+   ========================================================= */
+
+/* --- Reset y Configuración General --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #2D3748; /* Color 4: Gris Oscuro */
+    background-color: #FDFBF7; /* Color 3: Beige Crema */
+}
+
+/* --- Encabezado y Navegación --- */
+header {
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    font-size: 1.5rem;
+    color: #D96B27; /* Color 1: Naranja Cálido */
+}
+
+.logo span {
+    color: #2E7D32; /* Color 2: Verde Naturaleza */
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #2D3748;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover, nav a.active {
+    background-color: #D96B27;
+    color: #ffffff;
+}
+
+/* --- Estructura Contenedora Principal --- */
+main {
+    max-width: 1100px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.seccion-titulo {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.seccion-titulo h2 {
+    color: #D96B27;
+    font-size: 2rem;
+}
+
+.seccion-titulo p {
+    color: #2E7D32;
+    font-weight: 600;
+}
+
+/* --- PÁGINA 1: INDEX.HTML --- */
+.hero {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2rem;
+    border-left: 5px solid #D96B27;
+}
+
+.hero-texto {
+    flex: 1;
+    min-width: 280px;
+}
+
+.hero-texto h2 {
+    color: #D96B27;
+    margin-bottom: 1rem;
+}
+
+.hero-img {
+    flex: 1;
+    min-width: 280px;
+    text-align: center;
+}
+
+.hero-img img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.tarjetas-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.tarjeta {
+    flex: 1;
+    min-width: 280px;
+    background-color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.tarjeta h3 {
+    color: #2E7D32;
+    margin-bottom: 0.5rem;
+}
+
+/* --- PÁGINA 2: ADOPCIONES.HTML --- */
+.galeria-mascotas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.ficha-mascota {
+    flex: 1;
+    min-width: 240px;
+    max-width: 340px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.ficha-mascota img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.ficha-info {
+    padding: 1rem;
+}
+
+.ficha-info h3 {
+    color: #D96B27;
+}
+
+.etiqueta {
+    display: inline-block;
+    background-color: #2E7D32;
+    color: #ffffff;
+    font-size: 0.8rem;
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    margin: 0.5rem 0;
+}
+
+.btn-adoptar {
+    display: block;
+    text-align: center;
+    background-color: #D96B27;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0.5rem;
+    border-radius: 4px;
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+.btn-adoptar:hover {
+    background-color: #2E7D32;
+}
+
+/* --- PÁGINA 3: DONACIONES.HTML --- */
+.contenedor-donaciones {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.lista-necesidades {
+    flex: 1;
+    min-width: 280px;
+    background-color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 8px;
+}
+
+.lista-necesidades h3 {
+    color: #2E7D32;
+    margin-bottom: 1rem;
+}
+
+.lista-necesidades ul {
+    list-style-type: square;
+    margin-left: 1.5rem;
+}
+
+.lista-necesidades li {
+    margin-bottom: 0.5rem;
+}
+
+.info-acopio {
+    flex: 1;
+    min-width: 280px;
+    background-color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-top: 4px solid #D96B27;
+}
+
+.info-acopio h3 {
+    color: #D96B27;
+    margin-bottom: 1rem;
+}
+
+/* --- Pie de Página --- */
+footer {
+    background-color: #2D3748;
+    color: #ffffff;
+    text-align: center;
+    padding: 1.5rem 0;
+    margin-top: 3rem;
+}
+
+footer p {
+    font-size: 0.9rem;
+}
